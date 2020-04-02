@@ -130,7 +130,8 @@ In the case of iOS the native-app sends the `code` to a custom endpoint on your 
  */
 const clientSecret = appleSignIn.createClientSecret({
   /**
-   * Optionaly you can set the validity duration of the secret in seconds.
+   * Optionaly you can set the validity duration of the secret in seconds. Apple allows the secret to up to 6 months,
+   * but if you are creating a clientSecret per request basis you can set your own expiration duration.
    * Defaults to 6 months.
    */
   expirationDuration: 5 * 60, // 5 minutes
