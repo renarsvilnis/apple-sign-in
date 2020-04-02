@@ -177,9 +177,9 @@ Result of `appleSignIn.getAuthorizationToken` command is a JSON object represent
 const claim = await appleSignIn.verifyIdToken(tokenResponse.id_token, {
   // (Optional) verifies the nonce
   nonce: "nonce",
-  // (Optional) If you want to check subject(sub field) of the jwt a.k.a "user_identifier" or "provider_id". Might be usefull in the case where iOS app also sends you it, you can verify is correct
+  // (Optional) If you want to check subject(sub field) of the jwt a.k.a "user_identifier|provider_id". Might be usefull in the case where iOS app also sends you it, so you can verify if it is correct
   subject: "000852.5g3d8d4b3db045b48b7a58fb07728e1e.1303",
-  // (Optional) If you want to handle expiration on your own, useful in case of iOS  as identity
+  // (Optional) If you want to handle expiration on your own, useful in case of iOS as identityId can't be "refreshed"
   ignoreExpiration: true, // default is false
 });
 ```
