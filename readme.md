@@ -24,7 +24,7 @@ yarn add apple-sign-in-rest
 
 Library is built on typescript and has well documented source code. This will provide a zero-effort developer expierence within your existing code editors. But the library also provides autogenered documentation using [typedoc](https://typedoc.org/).
 
-- [Full Documentation](https://renarsvilnis.github.io/apple-sign-in-rest/modules/_applesignin_.html)
+> [Documentation](https://renarsvilnis.github.io/apple-sign-in-rest/)
 
 ## Usage
 
