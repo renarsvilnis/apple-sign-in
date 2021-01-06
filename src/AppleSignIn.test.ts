@@ -29,6 +29,7 @@ afterAll(() => {
 describe("AppleSignIn", () => {
   describe("constructor()", () => {
     describe("validates options", () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const create = (options?: any) => () => new AppleSignIn(options);
 
       test("clientId", () => {

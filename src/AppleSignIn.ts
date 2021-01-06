@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import fs from "fs";
 import { URL } from "url";
 import querystring from "querystring";
@@ -256,13 +257,11 @@ export default class AppleSignIn {
       const response = await axios("https://appleid.apple.com/auth/token", {
         method: "post",
         data: querystring.stringify({
-          /* eslint-disable @typescript-eslint/camelcase */
           client_id: this.clientId,
           client_secret: clientSecret,
           grant_type: "authorization_code",
           code,
           redirect_uri: options?.redirectUri,
-          /* eslint-enable @typescript-eslint/camelcase */
         }),
       });
       results = response.data as AccessTokenResponse;
@@ -297,12 +296,10 @@ export default class AppleSignIn {
       const response = await axios("https://appleid.apple.com/auth/token", {
         method: "post",
         data: querystring.stringify({
-          /* eslint-disable @typescript-eslint/camelcase */
           client_id: this.clientId,
           client_secret: clientSecret,
           grant_type: "refresh_token",
           refresh_token: refreshToken,
-          /* eslint-enable @typescript-eslint/camelcase */
         }),
       });
       results = response.data as RefreshTokenResponse;
