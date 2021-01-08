@@ -131,7 +131,7 @@ export interface AppleIdTokenType {
   auth_time: number;
 }
 
-export default class AppleSignIn {
+export class AppleSignIn {
   private clientId: string;
   private teamId: string;
   private keyIdentifier: string;
@@ -433,3 +433,4 @@ export default class AppleSignIn {
     return jwtClaims;
   }
 }
+export default AppleSignIn;

@@ -48,9 +48,9 @@ Compared to other libraries `apple-sign-in-rest` chooses to create an instance w
 
 ```javascript
 // Using modules
-import AppleSignIn from 'apple-sign-in-rest';
+import {AppleSignIn} from 'apple-sign-in-rest';
 // or if using common.js
-const AppleSignIn = require("apple-sign-in-rest").default;
+const {AppleSignIn} = require("apple-sign-in-rest");
 
 /**
  * See docs for full list of options and descriptions:
