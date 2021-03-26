@@ -58,7 +58,7 @@ const {AppleSignIn} = require("apple-sign-in-rest");
  */
 const appleSignIn = new AppleSignIn({
   /**
-   * This secret depends on that login "flow" you trying to create:
+   * The clientId depends on that login "flow" you trying to create:
    *   - "web login" - this is the "serviceId"
    *   - "ios login" - this is the app "bundleId", choose only this if you trying to
    *                   verify user that has signed into using the native iOS way
