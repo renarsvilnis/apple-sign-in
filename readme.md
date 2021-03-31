@@ -69,7 +69,7 @@ const appleSignIn = new AppleSignIn({
   keyIdentifier: "U3B842SVGC",
   privateKey: "-----BEGIN PRIVATE KEY-----\nMIGTAgEHIHMJKJyqGSM32AgEGC...",
   // or instead of privateKey use privateKeyPath to read key from file
-  privateKeyPath: '/Users/arnold/my-project/credentials/AuthKey.p8';
+  privateKeyPath: '/Users/arnold/my-project/credentials/AuthKey.p8'
 })
 ```
 
