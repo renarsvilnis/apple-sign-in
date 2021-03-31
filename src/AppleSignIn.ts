@@ -193,7 +193,7 @@ export class AppleSignIn {
      * @example ['email']
      * @example ['name', 'email']
      */
-    scope?: "name" | "email"[];
+    scope?: ("name" | "email")[];
     /**
      * A unique and non-guessable value that helps prevent CSRF attacks. Usually a UUID string.
      * @link https://auth0.com/docs/protocols/oauth2/oauth-state
