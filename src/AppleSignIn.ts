@@ -128,6 +128,14 @@ export interface AppleIdTokenType {
    */
   is_private_email?: boolean;
 
+  /**
+   * An Integer value that indicates whether the user appears to be a real person. Use the value of this claim to mitigate fraud.
+   * The possible values are: 0 (or Unsupported), 1 (or Unknown), 2 (or LikelyReal).
+   * This claim is present only on iOS 14 and later, macOS 11 and later, watchOS 7 and later, tvOS 14 and later; the claim isn’t present or supported for web-based apps.
+   * @example 2
+   */
+  real_user_status?: 0|1|2;
+
   auth_time: number;
 }
 

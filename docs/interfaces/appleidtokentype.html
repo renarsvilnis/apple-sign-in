@@ -2712,6 +2712,9 @@ img {
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="appleidtokentype.html#is_private_email" class="tsd-kind-icon">is_<wbr>private_<wbr>email</a>
 				</li>
+        <li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="appleidtokentype.html#real_user_status" class="tsd-kind-icon">real_<wbr>user_<wbr>status</a>
+				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="appleidtokentype.html#iss" class="tsd-kind-icon">iss</a>
 				</li>
@@ -2766,6 +2769,7 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="appleidtokentype.html#exp" class="tsd-kind-icon">exp</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="appleidtokentype.html#iat" class="tsd-kind-icon">iat</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="appleidtokentype.html#is_private_email" class="tsd-kind-icon">is_<wbr>private_<wbr>email</a></li>
+              <li class="tsd-kind-property tsd-parent-kind-interface"><a href="appleidtokentype.html#real_user_status" class="tsd-kind-icon">real_<wbr>user_<wbr>status</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="appleidtokentype.html#iss" class="tsd-kind-icon">iss</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="appleidtokentype.html#nonce" class="tsd-kind-icon">nonce</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="appleidtokentype.html#nonce_supported" class="tsd-kind-icon">nonce_<wbr>supported</a></li>
@@ -2803,7 +2807,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">auth_<wbr>time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/renarsvilnis/apple-sign-in-rest/blob/master/src/AppleSignIn.ts#L131">AppleSignIn.ts:131</a></li>
+						<li>Defined in <a href="https://github.com/renarsvilnis/apple-sign-in-rest/blob/master/src/AppleSignIn.ts#L139">AppleSignIn.ts:139</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2925,6 +2929,27 @@ img {
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
 						<dd><p>true</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+      <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="real_user_status" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> real_<wbr>user_<wbr>status</h3>
+				<div class="tsd-signature tsd-kind-icon">real_<wbr>user_<wbr>status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/renarsvilnis/apple-sign-in-rest/blob/master/src/AppleSignIn.ts#L137">AppleSignIn.ts:137</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>An Integer value that indicates whether the user appears to be a real person. Use the value of this claim to mitigate fraud. The possible values are: 0 (or Unsupported), 1 (or Unknown), 2 (or LikelyReal).
+						This claim is present only on iOS 14 and later, macOS 11 and later, watchOS 7 and later, tvOS 14 and later; the claim isn’t present or supported for web-based apps.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>example</dt>
+						<dd><p>2</p>
 						</dd>
 					</dl>
 				</div>
