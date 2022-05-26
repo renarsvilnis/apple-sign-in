@@ -115,6 +115,11 @@ export interface AppleIdTokenType {
    */
   email?: string;
   /**
+   * [First login only] The user's name.
+   * @example John Doe
+   */
+  name?: string;
+  /**
    * [First login only] A Boolean value that indicates whether the service has verified the email. The value of this
    * claim is always true because the servers only return verified email addresses.
    * @example true
