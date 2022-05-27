@@ -65,7 +65,7 @@ export interface AccessTokenResponse {
   token_type: string;
 }
 
-export type RefreshTokenResponse = Pick<AccessTokenResponse, "access_token" | "expires_in" | "token_type">;
+export type RefreshTokenResponse = Pick<AccessTokenResponse, "access_token" | "expires_in" | "token_type" | "id_token" | "refresh_token" >;
 
 /**
  * https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_rest_api/authenticating_users_with_sign_in_with_apple#3383773
