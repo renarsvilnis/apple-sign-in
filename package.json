@@ -70,7 +70,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwks-rsa": "^1.12.1"
   },
   "devDependencies": {
